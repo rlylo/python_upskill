@@ -26,6 +26,9 @@ class Item:
     def __str__(self):
         return f'{type(self).__name__}{self.__dict__}'
 
+    def instance_method(self):
+        print(f"This is an instance method{self.item_name}")
+
     @staticmethod
     def static_method():
         print(f"This is static method of Item")
